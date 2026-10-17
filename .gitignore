@@ -1,0 +1,10 @@
+# Data files (large, downloaded separately)
+data/*.csv
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE
+.vscode/
+.DS_Store
