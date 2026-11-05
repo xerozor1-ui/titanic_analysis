@@ -21,3 +21,13 @@ This project explores the Titanic dataset as part of the Python & AI Fundamental
 - Week 6: Load and explore data with Pandas
 - Week 7: Data cleaning and feature engineering
 - Week 8: Machine learning with Scikit-learn
+
+# Data Wrangling (Week 7)
+- Filled missing Age with median
+- Filled missing Embarked with mode
+- Dropped Cabin (77% missing)
+- Created FamilySize feature
+- Created IsAlone feature
+- Transformed Sex and Embarked to numerical
+- Saved cleaned data to data/titanic_cleaned.csv
+- Stored data in SQLite (titanic.db)

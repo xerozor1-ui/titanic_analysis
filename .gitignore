@@ -8,3 +8,6 @@ __pycache__/
 # IDE
 .vscode/
 .DS_Store
+
+# Generated databases
+*.db
