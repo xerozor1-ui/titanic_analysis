@@ -20,7 +20,8 @@ This project explores the Titanic dataset as part of the Python & AI Fundamental
 # Course Progress
 - Week 6: Load and explore data with Pandas
 - Week 7: Data cleaning and feature engineering
-- Week 8: Machine learning with Scikit-learn
+- Week 8: First machine learning model (Logistic Regression)
+- Week 9: Model evaluation and improvement
 
 # Data Wrangling (Week 7)
 - Filled missing Age with median
@@ -31,3 +32,10 @@ This project explores the Titanic dataset as part of the Python & AI Fundamental
 - Transformed Sex and Embarked to numerical
 - Saved cleaned data to data/titanic_cleaned.csv
 - Stored data in SQLite (titanic.db)
+
+# Machine Learning (Week 8)
+- Trained Logistic Regression model to predict survival
+- Features: Pclass, Sex, Age
+- Label: Survived
+- Split: 80% training, 20% testing (random_state=42)
+- Accuracy: 0.81 (baseline: 0.62)
