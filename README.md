@@ -22,6 +22,7 @@ This project explores the Titanic dataset as part of the Python & AI Fundamental
 - Week 7: Data cleaning and feature engineering
 - Week 8: First machine learning model (Logistic Regression)
 - Week 9: Model evaluation and improvement
+- Week 10: Deep learning (neural networks)
 
 # Data Wrangling (Week 7)
 - Filled missing Age with median
@@ -39,3 +40,12 @@ This project explores the Titanic dataset as part of the Python & AI Fundamental
 - Label: Survived
 - Split: 80% training, 20% testing (random_state=42)
 - Accuracy: 0.81 (baseline: 0.62)
+
+# Model Evaluation (Week 9)
+- Script: evaluate_model.py
+- Confusion matrix: TN=91, FP=14, FN=20, TP=54 (dominant error: false negatives)
+- Precision: 0.79, Recall: 0.73, F1: 0.76
+- 5-fold cross-validation average accuracy: 0.79
+- Coefficients: Sex 2.47, Pclass -1.04, Age -0.03 (Sex is the strongest predictor)
+- Logistic Regression 0.81 vs. Decision Tree 0.78
+- Feature experiment: adding FamilySize and IsAlone gave 0.80 vs. 0.81 with 3 features (no improvement)
