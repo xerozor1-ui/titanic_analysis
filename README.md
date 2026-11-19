@@ -49,3 +49,11 @@ This project explores the Titanic dataset as part of the Python & AI Fundamental
 - Coefficients: Sex 2.47, Pclass -1.04, Age -0.03 (Sex is the strongest predictor)
 - Logistic Regression 0.81 vs. Decision Tree 0.78
 - Feature experiment: adding FamilySize and IsAlone gave 0.80 vs. 0.81 with 3 features (no improvement)
+
+# Deep Learning (Week 10)
+- Script: neural_network.py (guided tour, annotated with explanations of each step)
+- TensorFlow/Keras Sequential model: 3 inputs -> Dense(16, relu) -> Dense(8, relu) -> Dense(1, sigmoid)
+- Features scaled with StandardScaler; compiled with adam + binary_crossentropy; trained 50 epochs, batch size 32
+- Neural network accuracy: ~0.79-0.81 (varies run to run due to random weight initialization)
+- Modification: added a Dense(4, relu) hidden layer -> mean 0.81 over 3 runs vs. 0.79 original (within run-to-run noise)
+- Comparison: Logistic Regression 0.81 vs. neural network ~0.79-0.81, essentially a tie on this small tabular dataset
