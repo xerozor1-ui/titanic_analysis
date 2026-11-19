@@ -57,3 +57,14 @@ This project explores the Titanic dataset as part of the Python & AI Fundamental
 - Neural network accuracy: ~0.79-0.81 (varies run to run due to random weight initialization)
 - Modification: added a Dense(4, relu) hidden layer -> mean 0.81 over 3 runs vs. 0.79 original (within run-to-run noise)
 - Comparison: Logistic Regression 0.81 vs. neural network ~0.79-0.81, essentially a tie on this small tabular dataset
+
+# Neural Network Build & Evaluation (Week 11)
+- Script: build_nn.py (pseudocode plan at the top, built from scratch)
+- Network: 3 inputs -> Dense(16, relu) -> Dense(8, relu) -> Dense(1, sigmoid); adam, binary_crossentropy, 50 epochs, batch 32
+- Accuracy: 0.77-0.79 (varies with random initialization)
+- Example confusion matrix: TN=88, FP=17, FN=20, TP=54; precision 0.76, recall 0.73, F1 0.74
+- Dominant error: false negatives (precision > recall), same pattern as Logistic Regression
+- Fair comparison (same scaled split): Logistic Regression 0.80 test / 0.79 CV vs. neural network 0.77-0.79 (tie or slight LR edge)
+- Early stopping (validation set carved from training data, patience 10): stopped at 40-50 of 200 epochs, accuracy 0.77-0.81
+- Hyperparameter experiment: L2(0.01) regularization: accuracy unchanged (~0.80), but recall rose from ~0.65 to ~0.72; reverted to baseline
+- Takeaway: on small tabular data, Logistic Regression is the better choice: same accuracy, simpler, interpretable, deterministic
